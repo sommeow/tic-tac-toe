@@ -18,7 +18,8 @@ table {
      position: absolute;
      left: 50%;
      margin-left: -155px;
-     top: 50px;
+     top: 100px;
+     clear: both;
 }
 
 table tr:first-child td {

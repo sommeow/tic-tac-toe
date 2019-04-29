@@ -5,8 +5,8 @@
 // Provide a Reset Game button that will clear the contents of the board.
 
 var gameBoard;
-const playerOne = "o";
-const playerTwo = "x";
+const playerOne = 'x';
+const playerTwo = 'o';
 
 const winPath = [
 	// horizontal
@@ -41,8 +41,7 @@ function turnClick(square) {
 	if (typeof gameBoard[square.target.id] == 'number') {
 		turn(square.target.id, playerOne)
 	  if (!checkTie()) turn(playerTwo);	
-	}
-}
+	}	
 
 function turn(squareId, player) {
 	gameBoard[squareId] = player;
@@ -92,4 +91,5 @@ function checkTie() {
 	return true;
 	}
 	return false;
+}
 }
